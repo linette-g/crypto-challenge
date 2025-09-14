@@ -35,10 +35,12 @@ pip install -r requirements.txt
 
 You need an **Etherscan API key** to run this project.
 1. Get a free API key from [Etherscan](https://etherscan.io/myapikey).
-2. Add the key to a `.env` file in your project directory:
-
-```env
-ETHERSCAN_API_KEY=YourActualAPIKeyHere
+2. Create your .env file and add your API key
+```bash
+# Create the .env file
+touch .env
+# Add your API key
+echo "ETHERSCAN_API_KEY=YourActualKeyHere" > .env
 ```
 
 ## Example Usage

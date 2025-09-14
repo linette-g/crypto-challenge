@@ -9,6 +9,13 @@ load_dotenv()
     
 def get_transactions(address: str, limit: int = 15) -> List[Dict]:
     api_key = os.getenv('ETHERSCAN_API_KEY')
+
+    if not api_key or "YourActualAPIKeyHere" in api_key:
+        raise ValueError(
+            "API key not configured. "
+            "Please create a .env file with ETHERSCAN_API_KEY=YourActualKeyHere."
+        )
+    
     base_url = 'https://api.etherscan.io/api'
 
     params = {
