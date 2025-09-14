@@ -66,3 +66,11 @@ Anomalies Graph
 Printed output
 
 ![printed output](./print-output.png)
+
+## Remarks
+
+- AI tools were used to identify tokens exhibiting unusual activity over the past 30 days ('synfuture' used as argument in part 2)
+
+- AI tools were used to select active wallet addresses, such as Binance hot wallets to use for analysing transaction patterns ('Binance' address used as argument in part 1)
+
+- CoinGecko API was used to retrieve corresponding historical market data using token IDs
